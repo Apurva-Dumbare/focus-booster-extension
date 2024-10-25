@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Simple Focus Booster",
+    "version": "1.0",
+    "description": "Blocks distracting websites to help you focus.",
+    "permissions": ["tabs"],
+    "content_scripts": [
+      {
+        "matches": [
+          "*://*.facebook.com/*",
+          "*://*.youtube.com/*",
+          "*://*.twitter.com/*"
+        ],
+        "js": ["blocker.js"]
+      }
+    ]
+  }
+  
